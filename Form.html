@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<link href = "Form.css" rel="stylesheet" type = "text/css">
+<html>
+<body>
+    <main>
+      <h1 id="title" >Who Are You?</h1>
+      <h4 id="description">Tell Me Who You are! <br>Please?</h4>
+    <form id="survey-form" class="column">
+        <div class="solid">
+          <h3>
+      <label class="label" id="name-label" for="name" >Name</label></h3>
+      <input id="name" type="text"  placeholder="name" required />
+        </div>
+      <br />
+      <div class="solid">
+          <h3><label class="label" id="email-label" for="email">Email</label></h3>
+      <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+      <br />
+        <div class="solid">
+          <h3><label id="number-label" for="number">Favorite Number</label><h3>
+        <input type="number" id="number" placeholder="number" min="10" max="10">
+      </div>
+        <br />
+          <div class="solid" >
+            <h3><label for="sex">What are you</label></h3>
+            <select name="sex" id="dropdown">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+              <option value="other">lizzard</option>
+              </select>
+           </div>
+            <br>
+      <div class="solid">
+        <h3><label for="color">What color is The Best?</label></h3>
+        <div class="content">
+        <input type="radio" name="radio" value="blue" class="blue">
+        <label for="blue" class="blue">blue</label><br>
+        <input type="radio" name="radio" value="yellow" class="yellow">
+        <label for="yellow" class="yellow">yellow</label><br>
+        <input type="radio" name="radio" value="red" class="red">
+        <label for="red" class="red">red</label><br>
+        <input type="radio" name="radio" value="neither" >
+        <label for="neither">neither</label><br>
+        </div>
+        </div>
+         <br />
+          <div class="solid">
+            <h3><label for="checkboxes">What's The Best Number?</label></h3>
+      <div class="content">
+      <input type="checkbox" id="checkbox" value="checkbox">
+      <label for="1">1</label><br>
+      <input type="checkbox" id="checkbox" value="checkbox">
+      <label for="7">7</label><br>
+      <input type="checkbox" id="checkbox" value="checkbox">
+      <label for="1 000 000">1 000 000</label><br>
+      <input type="checkbox" id="checkbox" value="checkbox">
+      <label for="What">What's a Number?</label>
+              </div>
+            </div>
+            <br />
+      <div class="solid" >
+          <label>Do You want to say something else?</label>
+        <br />
+          <textarea 
+            id="comments"
+            name="comment"
+            placeholder="Do You want to say something else?"
+          ></textarea>
+        </div>
+        <br>
+            <div>
+      <button id="submit" type="submit" class="button">Submit</button>
+              <div>
+      </form>
+    </div>
+    </main>
+        <body>
+            </body>
+            </html>
