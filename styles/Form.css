@@ -83,11 +83,33 @@ body {
     border-style: solid;
     border-color: red;
   }
-  .solid {
-    background-color: rgba(010, 010, 010, 0.6);  
-    padding: 1%;
-    border-radius: 0.25rem;
+  .green {
+    color: green;
+    border-style: solid;
+    border-color: green;
   }
+  .pink {
+    color: pink;
+    border-style: solid;
+    border-color: pink;
+  }
+  .purple {
+    color: purple;
+    border-style: solid;
+    border-color: purple;
+  }
+  .toxic {
+    color: rgb(150, 167, 0);
+    border-style: solid;
+    border-color: rgb(74, 75, 16);
+  }
+  .dirty {
+    color: rgb(215, 0, 223);
+    border-style: solid;
+    border-color: rgb(253, 0, 63);
+  }
+
+
   input {
     color: black;
     border-style: solid;

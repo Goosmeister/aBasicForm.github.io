@@ -1,87 +1,106 @@
 <!DOCTYPE html>
-<link href = "Form.css" rel="stylesheet" type = "text/css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Story</title>
+  <script src="script/script.js"></script>
+  <link href = "styles/Form.css" rel="stylesheet" type = "text/css">
+</head>
+
 <html>
-<body>
+  <body>
     <main>
-      <h1 id="title" >Who Are You?</h1>
-      <h4 id="description">Tell Me Who You are! <br>Please?</h4>
-    <form id="survey-form" class="column">
-        <div class="solid">
+      <h1 id="title" >Choices Choices</h1>
+      <h4 id="description">Choose!</h4>
+    <form id="survey-form" class="column" action="submit.php" method="get">
+
+    <div class="name">
           <h3>
-      <label class="label" id="name-label" for="name" >Name</label></h3>
-      <input id="name" type="text"  placeholder="name" required />
-        </div>
-      <br />
-      <div class="solid">
-          <h3><label class="label" id="email-label" for="email">Email</label></h3>
-      <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-      <br />
-        <div class="solid">
-          <h3><label id="number-label" for="number">Favorite Number</label><h3>
+      <label class="label" id="name-label" for="name" >Your First Name</label></h3>
+      <input name="name" id="name" type="text"  placeholder="name" required />
+    </div>
+
+    <div class="number">
+          <h3><label id="number-label" for="number">Choose a Number</label><h3>
         <input type="number" id="number" placeholder="number" min="10" max="10">
-      </div>
-        <br />
-          <div class="solid" >
-            <h3><label for="sex">What are you</label></h3>
-            <select name="sex" id="dropdown">
-            <option value="male">male</option>
-            <option value="female">female</option>
-            <option value="other">other</option>
-              <option value="other">lizzard</option>
+    </div>
+
+    <div class="animal" >
+            <h3><label for="Animal">Choose an Animal</label></h3>
+            <select name="Animal" id="dropdown">
+            <option value="Dolphin">Dolphin</option>
+            <option value="Orca">Orca</option>
+            <option value="Shark">Shark</option>
+              <option value="Lizzard">Lizzard</option>
+              <option value="Dinosaur">Dinosaur</option>
+              <option value="Unicorn">Unicorn</option>
+              <option value="Bigfoot">Bigfoot</option>
               </select>
-           </div>
-            <br>
-      <div class="solid">
-        <h3><label for="color">What color is The Best?</label></h3>
+    </div>
+  
+    <div class="color">
+        <h3><label for="color">Choose a Color</label></h3>
         <div class="content">
-        <input type="radio" name="radio" value="blue" class="blue">
-        <label for="blue" class="blue">blue</label><br>
-        <input type="radio" name="radio" value="yellow" class="yellow">
-        <label for="yellow" class="yellow">yellow</label><br>
-        <input type="radio" name="radio" value="red" class="red">
-        <label for="red" class="red">red</label><br>
-        <input type="radio" name="radio" value="neither" >
-        <label for="neither">neither</label><br>
+          <input type="radio" name="radio" value="blue" class="blue">
+          <label for="blue" class="blue">blue</label><br>
+          <input type="radio" name="radio" value="yellow" class="yellow">
+          <label for="green" class="green">green</label><br>
+          <input type="radio" name="radio" value="red" class="red">
+          <label for="red" class="red">red</label><br>
+          <input type="radio" name="radio" value="pink" class="pink">
+          <label for="pink" class="pink">pink</label><br>
+          <input type="radio" name="radio" value="purple" class="purple">
+          <label for="purple" class="purple">purple</label><br>
+          <input type="radio" name="radio" value="toxic" class="toxic">
+          <label for="toxic" class="toxic">toxic</label><br>
+          <input type="radio" name="radio" value="dirty" class="dirty">
+          <label for="dirty" class="dirty">dirty</label><br>
         </div>
-        </div>
-         <br />
-          <div class="solid">
-            <h3><label for="checkboxes">What's The Best Number?</label></h3>
+    </div>
+
+    <div class="senses">
+      <h3><label for="checkboxes">Choose a Sense(s)</label></h3>
       <div class="content">
-      <input type="checkbox" id="checkbox" value="checkbox">
-      <label for="1">1</label><br>
-      <input type="checkbox" id="checkbox" value="checkbox">
-      <label for="7">7</label><br>
-      <input type="checkbox" id="checkbox" value="checkbox">
-      <label for="1 000 000">1 000 000</label><br>
-      <input type="checkbox" id="checkbox" value="checkbox">
-      <label for="What">What's a Number?</label>
-              </div>
-            </div>
-            <br />
-      <div class="solid" >
-          <label>Do You want to say something else?</label>
-        <br />
+        <input type="checkbox" id="checkbox" value="checkbox">
+        <label for="stinky">Stinky</label><br>
+        <input type="checkbox" id="checkbox" value="checkbox">
+        <label for="Ugly">Ugly</label><br>
+        <input type="checkbox" id="checkbox" value="checkbox">
+        <label for="Loud">Loud</label><br>
+        <input type="checkbox" id="checkbox" value="checkbox">
+        <label for="Painful">Painful</label>
+      </div>
+    </div>
+
+      <div class="part" >
+        <h3><label>Type In A Body Part</label></h3>
+ 
           <textarea 
-            id="comments"
-            name="comment"
-            placeholder="Do You want to say something else?"
+            id="part"
+            name="part"
+            placeholder="Type In A Body Part"
           ></textarea>
         </div>
-        <br>
-            <div>
-      <button id="submit" type="submit" class="button">Submit</button>
+
+        <div class="word" >
+          <h3><label>Type In Your Favorite Word</label></h3>
+   
+            <textarea 
+              id="word"
+              name="word"
+              placeholder="Type In Your Favorite Word"
+            ></textarea>
+          </div>
+
+            <div class = "submit-button">
+      <button id="submit" type="submit" class="button" target="submit.php">Submit</button>
               <div>
+
       </form>
     </div>
     </main>
-        <body>
-            </body>
-            </html>
+  </body>
+</html>
