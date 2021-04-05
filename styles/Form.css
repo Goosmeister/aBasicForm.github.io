@@ -1,74 +1,147 @@
-body {
-    align-items: center;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: white;
-    margin: 8%;
-    background: black;
+*{
+  margin: 0;
+  padding:0;
+  font-family: sans-serif;
+box-sizing: border-box;
+color: white;
+}
+
+main{
+  margin-top: 5vw;
+  display: flex;
+  color: rgb(0, 0, 0);
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  overflow: hidden;
   }
-  h1, h4{
-    display: grid;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.5;
-    color: white;
-    background-color: rgba(010, 010, 010, 0.4); 
-    margin: 1%;
-    padding: 2% 1%;
-    backdrop-filter: blur(10px);
   
+body{
+  background: #161a1d;
+}
+
+  form{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+  }
+
+  #form-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 1vw;
+    padding: 1vw;
+  }
+
+  h1{
+    padding: 2vw;
+    width: 100%;
+   align-self: center;
+   text-align: center !important;
+    color: #ffffff ;
+    background-color:  #ba181b; 
+    justify-self: center;
+  }
+option{
+  color: black;
+}
+  .choice{
+margin: 1vw;
+  }
+
+  label{
+    padding: 0.2vw;
+
   }
   select,
   textarea {
     margin: 5%;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
     color: black;
-  }
-  div {
-    color: black;
-    margin: 0% 1% 0%;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    text-align: center;
-    padding: 1%;
-    border-radius: 2px;
-  
-  }
-  label {
-    color: white;
-    border-radius: 3px;
-    margin: 2% 5% 2%;
-    padding: 0.5% 4% 0.5%;
-  }
-  form {
-    background-color: rgba(100, 100, 100, 0.5); 
-    padding: 5%;
-    border-radius: 0.25rem;
-    backdrop-filter: blur(5px);
-  }
-  .column {
-    flex: 50%;
-  }
-  .content {
-    flex: center;
-    max-width: 250px;
-    text-align: left;
-    background-color: grey;
-    margin: auto;
-    border: 3% black;
-    padding: 3%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+a{
+  text-decoration: none !important;
+  color:rgb(211, 0, 0);
+padding: 1vw;
+}
+a:hover{
+  color: #9a8c98;
+}
+
+nav{
+  display: flex;
+  background-color: #ffffff;
+  height: 4vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+  h3 {
+    color: white;
+margin: 5vw;
+padding: 1.5vw;
+background: #660708;
+width: 100%;
+text-align: center;
+  }
+
+  .name input, .number input, .animal select, textarea{
+    height: 3vw;
+    width: 20vw;
+    padding: 1vw;
+    align-self: center;
+  }
+
+  .color{
+
+    size: 1vw;
+  }
+  
+  form{
+    background:transparent; 
+margin: 1vw;
+  }
+
+  .content {
+    display: flex;
+    text-align: left;
+    background: transparent;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 1vw;
+    padding: 1vw;
+    width: 50vw;
+  }
+
+  .color .content{
+   display: inline-flex;
   }
   .blue {
+    
     color: blue;
     border-style: solid;
     border-color: blue;
@@ -110,33 +183,48 @@ body {
   }
 
 
-  input {
-    color: black;
-    border-style: solid;
-    border-color: black;
-    background-color: white;
-    margin: 1%;
-    padding: 2%;
-    border-radius: 3px;
-  }
+
    button {
     color: white;
-    border-style: solid;
-    border-radius: 5px;
-    margin: 5%;
+
     }
+
   .button {
-    padding: 1% 2%;
+    margin: 2vw;
+    padding: 1vw 2vw;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
     color: white;
-    background-color: black;
-    border-radius: 7px;
+    background-color: #161a1d;
+    border-radius: 3px;
     box-shadow: 0 0 20px;
   }
-  .button:hover {background-color: gold; color: black}
+
+  .button:hover {background-color: rgb(197, 0, 0); color: black}
   .button:active {
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 10px;
+    
+  }
+
+  footer{
+    background: #660708;
+    align-self: flex-end;
+    bottom: 0;
+    top: 100%;
+    overflow: hidden;
+    margin:1vw 0 0 0;
+    padding: 2vw;
+  }
+
+  footer a{
+    color: white;
+    background: #660708;
+    align-self: flex-end;
+    float: right;
+  }
+
+  footer a:hover{
+    color: red;
   }
