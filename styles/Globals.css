@@ -3,7 +3,7 @@
   padding:0;
   font-family: sans-serif;
 box-sizing: border-box;
-color: white;
+color: rgb(0, 0, 0);
 }
 
 main{
@@ -21,7 +21,63 @@ main{
   }
   
 body{
-  background: #161a1d;
+  background: #fff5f5;
+}
+
+nav a{
+  text-decoration: none !important;
+  color:rgb(211, 0, 0);
+  padding: 1vw;
+}
+a:hover{
+  color: #9a8c98;
+}
+
+ul button{
+  height: 2vw;
+  float: right;
+  background: rgb(155, 0, 0);
+  Color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0.8vw;
+}
+ul a{
+  color: white;
+}
+ul  a:hover{
+  color: black;
+  
+}
+
+ul button:hover{
+  background-color: #ff9393;
+}
+
+nav{
+
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  box-shadow: 0 0 0.5vw black;
+}
+
+section{
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 2px white solid;
+  margin: 2vw;
+  box-shadow: 0 0 0.5vw black;
+  background: rgb(41, 45, 49);
 }
 
   form{
@@ -48,6 +104,8 @@ body{
   }
 
   h1{
+    border: 1px solid black;
+    margin: 5vw;
     padding: 2vw;
     width: 100%;
    align-self: center;
@@ -55,12 +113,28 @@ body{
     color: #ffffff ;
     background-color:  #ba181b; 
     justify-self: center;
+    box-shadow: 0 0 0.2vw black;
+    font-size: 4vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   }
+
+  h3 {
+    border-radius: 0.5vw 00.5vw 0 0;
+    color: white;
+    margin-bottom: 1vw;
+    padding: 1.5vw;
+    background: #660708;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px orange solid;
+  }
+
 option{
   color: black;
 }
+
   .choice{
-margin: 1vw;
+    margin: 1vw;
   }
 
   label{
@@ -73,43 +147,10 @@ margin: 1vw;
     color: black;
   }
 
-a{
-  text-decoration: none !important;
-  color:rgb(211, 0, 0);
-padding: 1vw;
-}
-a:hover{
-  color: #9a8c98;
-}
-
-nav{
-  display: flex;
-  background-color: #ffffff;
-  height: 4vw;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-  h3 {
-    color: white;
-margin: 5vw;
-padding: 1.5vw;
-background: #660708;
-width: 100%;
-text-align: center;
-  }
-
   .name input, .number input, .animal select, textarea{
     height: 3vw;
     width: 20vw;
-    padding: 1vw;
+    padding: 0.1vw;
     align-self: center;
   }
 
@@ -120,7 +161,7 @@ text-align: center;
   
   form{
     background:transparent; 
-margin: 1vw;
+    margin: 1vw;
   }
 
   .content {
@@ -186,18 +227,18 @@ margin: 1vw;
 
    button {
     color: white;
-
+    border-radius: 0.5vw;
     }
 
   .button {
     margin: 2vw;
     padding: 1vw 2vw;
-    font-size: 24px;
+    font-size: 2vw;
     text-align: center;
     cursor: pointer;
     color: white;
     background-color: #161a1d;
-    border-radius: 3px;
+    border-radius: 0.5vw;
     box-shadow: 0 0 20px;
   }
 
@@ -209,22 +250,52 @@ margin: 1vw;
   }
 
   footer{
+    color: white;
+    display: flex;
+    border-top: 2px solid orange;
     background: #660708;
     align-self: flex-end;
     bottom: 0;
     top: 100%;
     overflow: hidden;
-    margin:1vw 0 0 0;
-    padding: 2vw;
+    margin: 1vw 0 0 0;
+    padding: 4vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
 
+footer p, a{
+  margin: 1vw 0;
+  color: white;
+}
+
   footer a{
-    color: white;
-    background: #660708;
-    align-self: flex-end;
-    float: right;
+    color: rgb(255, 136, 0);
   }
 
   footer a:hover{
     color: red;
+  }
+  footer h4{
+    font-size: 2vw;
+    margin: 1vw;
+    color: white;
+  }
+  label{
+    color: white;
+  }
+
+  h5{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 100%;
+    margin: 10vw;
+    padding: 10vw;
+    color: black;
+    font-size: 2vw;
+    align-self:flex-start;
   }
