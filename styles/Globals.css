@@ -2,15 +2,15 @@
   margin: 0;
   padding:0;
   font-family: sans-serif;
-box-sizing: border-box;
-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 0.1vw black;
 }
 
 main{
   margin-top: 5vw;
   display: flex;
   color: rgb(0, 0, 0);
-
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
@@ -21,22 +21,25 @@ main{
   }
   
 body{
-  background: #fff5f5;
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+
+
 }
 
 nav a{
   text-decoration: none !important;
-  color:rgb(211, 0, 0);
+  color:orange;
   padding: 1vw;
+  
 }
 a:hover{
-  color: #9a8c98;
+  color: #fafafa;
 }
 
 ul button{
   height: 2vw;
   float: right;
-  background: rgb(155, 0, 0);
+  background: orange;
   Color: white;
   border: none;
   border-radius: 5px;
@@ -46,16 +49,16 @@ ul a{
   color: white;
 }
 ul  a:hover{
-  color: black;
+  color: orange;
   
 }
 
 ul button:hover{
-  background-color: #ff9393;
+  background-color: #00b7fff6;
 }
 
 nav{
-
+  border-bottom: 2px orange solid;
   background-color: #ffffff;
   height: auto;
   width: 100%;
@@ -74,10 +77,10 @@ section{
   justify-content: center;
   align-items: center;
   width: 70%;
-  border: 2px white solid;
+
   margin: 2vw;
-  box-shadow: 0 0 0.5vw black;
-  background: rgb(41, 45, 49);
+  box-shadow: 0 0 0.3vw white, inset 0 0 0.2vw white;
+  background: rgba(255, 255, 255, 0.4);
 }
 
   form{
@@ -104,29 +107,29 @@ section{
   }
 
   h1{
-    border: 1px solid black;
+    border: 2px solid orange;
     margin: 5vw;
     padding: 2vw;
     width: 100%;
    align-self: center;
    text-align: center !important;
     color: #ffffff ;
-    background-color:  #ba181b; 
+    background: pink;
     justify-self: center;
-    box-shadow: 0 0 0.2vw black;
+    box-shadow: 0 0 0.2vw white, inset 0 0 0.5vw black;
     font-size: 4vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   }
 
   h3 {
-    border-radius: 0.5vw 00.5vw 0 0;
+    border-radius: 0.5vw 0.5vw 0 0;
     color: white;
     margin-bottom: 1vw;
     padding: 1.5vw;
-    background: #660708;
+    background: rgba(255, 255, 255, 0.459);
     width: 100%;
     text-align: center;
-    border-bottom: 1px orange solid;
+    border-bottom: 2px orange solid;
   }
 
 option{
@@ -176,6 +179,7 @@ option{
     margin: 1vw;
     padding: 1vw;
     width: 50vw;
+    text-shadow: 0 0 0.1vw black;
   }
 
   .color .content{
@@ -183,7 +187,7 @@ option{
   }
   .blue {
     
-    color: blue;
+    color: royalblue;
     border-style: solid;
     border-color: blue;
   }
@@ -237,12 +241,12 @@ option{
     text-align: center;
     cursor: pointer;
     color: white;
-    background-color: #161a1d;
+    background-color: orange;
     border-radius: 0.5vw;
     box-shadow: 0 0 20px;
   }
 
-  .button:hover {background-color: rgb(197, 0, 0); color: black}
+  .button:hover {background-color: rgba(255, 255, 255, 0); color: black}
   .button:active {
     background-color: rgb(0, 0, 0);
     box-shadow: 0 0 10px;
@@ -253,7 +257,7 @@ option{
     color: white;
     display: flex;
     border-top: 2px solid orange;
-    background: #660708;
+    background: rgba(77, 77, 77, 0.527);
     align-self: flex-end;
     bottom: 0;
     top: 100%;
@@ -273,7 +277,7 @@ footer p, a{
 }
 
   footer a{
-    color: rgb(255, 136, 0);
+    color: orange;
   }
 
   footer a:hover{
@@ -288,14 +292,18 @@ footer p, a{
     color: white;
   }
 
-  h5{
-    display: flex;
-    flex-direction: column;
+  p{
+    display: block;
     top: 0;
-    bottom: 100%;
+    bottom: 100vw;
     margin: 10vw;
     padding: 10vw;
     color: black;
     font-size: 2vw;
-    align-self:flex-start;
+  }
+  #Back{
+    display: none;
+  }
+  b{
+    color: white;
   }

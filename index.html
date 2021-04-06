@@ -12,151 +12,153 @@
   <link rel="stylesheet" href="styles/popup.css">
 </head>
 
-<html>
+
   <body>
     <main>
 
       <header>
         <nav>
-          <ul><button><a href="#Contact" >Contact</a></button></ul>
+          <ul><button id="ContactButton"><a href="#Contact" >Contact</a></button>
+            <button id="Back"><a href="#" onclick="Back()">Back</a></button></ul>
         </nav>
       </header>
 
- 
+  <form name="form1" id="survey-form" class="column" action="submit.php" method="get">
 
-    
-        <form name="form1" id="survey-form" class="column" action="submit.php" method="get">
-          <h1 id="title" >Choices Choices</h1>
+      <h1 id="title" >Your Imaginary Friend Creator</h1>
 
-<section>
-  <h3>Choose A Name</h3>
-  <div class="name" id="form-box">
-      
-    <input name="name" id="name" type="text"  placeholder="name"  />
-  </div>
-</section>
-<section>
-  <h3>Choose A Color</h3>
-  <div class="color" id="form-box">
-     
-<div class="content">
- <div class="choice"><input type="radio" Name="radio" value="Blue" class="colorRadio">
-  <label for="blue" class="blue">blue</label></input></div>
-  <div class="choice"><input type="radio" Name="radio" value="Green" class="colorRadio">
-    <label for="green" class="green">green</label></div>
-<div class="choice"><input type="radio" Name="radio" value="Red" class="colorRadio">
-<label for="red" class="red">red</label></div>
-        <div class="choice"><input type="radio" Name="radio" value="Pink" class="colorRadio">
-          <label for="pink" class="pink">pink</label></div>
-      <div class="choice">  <input type="radio" Name="radio" value="Purple" class="colorRadio">
-        <label for="purple" class="purple">purple</label></div>
-      <div class="choice"><input type="radio" Name="radio" value="Toxic" class="colorRadio">
-        <label for="toxic" class="toxic">toxic</label></div>
-        <div class="choice"><input type="radio" Name="radio" value="Dirty" class="colorRadio">
-          <label for="dirty" class="dirty">dirty</label></div>
-        
-      </div>
-  </div>
-</section>
-<section>
-  <h3>Choose An Animal</h3>
-  <div class="animal" id="form-box">
-         
+      <section>
+        <h3>Type Your Friend's Name</h3>
+        <div class="name" id="form-box"> 
+          <input name="name" id="name" type="text"  placeholder="name"  />
+        </div>
+      </section>
+
+      <section>
+        <h3>Choose A Color</h3>
+        <div class="color" id="form-box">   
+          <div class="content">
+            <div class="choice"><input type="radio" Name="radio" value="Blue" class="colorRadio">
+              <label for="blue" class="blue">blue</label></input></div>
+              <div class="choice"><input type="radio" Name="radio" value="Green" class="colorRadio">
+              <label for="green" class="green">green</label></div>
+              <div class="choice"><input type="radio" Name="radio" value="Red" class="colorRadio">
+              <label for="red" class="red">red</label></div>
+              <div class="choice"><input type="radio" Name="radio" value="Pink" class="colorRadio">
+              <label for="pink" class="pink">pink</label></div>
+              <div class="choice">  <input type="radio" Name="radio" value="Purple" class="colorRadio">
+              <label for="purple" class="purple">purple</label></div>
+              <div class="choice"><input type="radio" Name="radio" value="Toxic" class="colorRadio">
+              <label for="toxic" class="toxic">toxic</label></div>
+              <div class="choice"><input type="radio" Name="radio" value="Dirty" class="colorRadio">
+              <label for="dirty" class="dirty">dirty</label></div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Choose An Animal</h3>
+        <div class="animal" id="form-box">
           <select id="Animal" class="dropdown">
-          <option value="Dolphin">Dolphin</option>
-          <option value="Orca">Orca</option>
-          <option value="Shark">Shark</option>
+            <option value="Dolphin">Dolphin</option>
+            <option value="Orca">Orca</option>
+            <option value="Shark">Shark</option>
             <option value="Lizzard">Lizzard</option>
             <option value="Dinosaur">Dinosaur</option>
             <option value="Unicorn">Unicorn</option>
             <option value="Bigfoot">Bigfoot</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Fairy">Fairy</option>
+          </select>
+        </div>
+      </section>
+
+        <section>
+          <h3>Type A Number</h3>
+          <div class="number" id="form-box">
+            <input type="number" id="number" placeholder="number" min="0" max="">
+          </div>
+        </section>
+
+        <section>
+          <h3>Choose A Body Part</h3>
+          <div class="animal" id="form-box">
+            <select id="part" class="dropdown">
+              <option value="Ears">Ears</option>
+              <option value="Noses">Noses</option>
+              <option value="Fingers">Fingers</option>
+              <option value="Eyes">Eyes</option>
+              <option value="Toes">Toes</option>
+              <option value="Horns">Horns</option>
+              <option value="Feet">Feet</option>
+              <option value="Pickles">Pickles</option>
+              <option value="Melons">Melons</option>
             </select>
-  </div>
-</section>
-<section>
-  <h3>Choose A Number</h3>
-  <div class="number" id="form-box">
-      
-      <input type="number" id="number" placeholder="number" min="0" max="10">
-  </div>
-</section>
-<section>
-  <h3>Choose A Body Part</h3>
-  <div class="animal" id="form-box">
-    <select id="part" class="dropdown">
-      <option value="Ears">Ears</option>
-      <option value="Noses">Noses</option>
-      <option value="Fingers">Fingers</option>
-        <option value="Eyes">Eyes</option>
-        <option value="Toes">Toes</option>
-        <option value="Horns">Horns</option>
-        <option value="Feet">Feet</option>
-        </select>
-    </div>
-</section>
-<section>
-  <h3>Choose A Sense(s)</h3>
+            </div>
+        </section>
+
+        <section>
+          <h3>Choose A Sense(s)</h3>
           <div class="senses" id="form-box">
-            
             <div class="content">
               <div class="choice"><input type="checkbox" id="checkbox" value=" Stinky">
-                <label for="Stinky">Stinky</label></div>
+              <label for="Stinky">Stinky</label></div>
               <div class="choice"><input type="checkbox" id="checkbox" value=" Ugly">
-                <label for="Ugly">Ugly</label></div>
-          <div class="choice"> <input type="checkbox" id="checkbox" value=" Loud">
-            <label for="Loud">Loud</label></div>
-             <div class="choice"><input type="checkbox" id="checkbox" value=" Painful">
+              <label for="Ugly">Ugly</label></div>
+              <div class="choice"> <input type="checkbox" id="checkbox" value=" Loud">
+              <label for="Loud">Loud</label></div>
+              <div class="choice"><input type="checkbox" id="checkbox" value=" Painful">
               <label for="Painful">Painful</label></div>
- 
+              <div class="choice"><input type="checkbox" id="checkbox" value=" Hot">
+              <label for="Hot">Hot</label></div>
             </div>
           </div>
-</section> 
-<section>
-  <h3>Choose An Area</h3>
-  <div class="animal" id="form-box">
-    <select id="area" class="dropdown">
-      <option value="Forest">Forest</option>
-      <option value="Desert">Desert</option>
-      <option value="Swamp">Swamp</option>
-        <option value="Boat">Boat</option>
-        <option value="Underworld">Underworld</option>
-        <option value="Another Planet">Another Planet</option>
-        <option value="Block Of Cheese">Block Of Cheese</option>
-        </select>
-    </div>
-</section>
+        </section> 
+
+        <section>
+          <h3>Choose An Area</h3>
+          <div class="animal" id="form-box">
+            <select id="area" class="dropdown">
+              <option value="Forest">Forest</option>
+              <option value="Desert">Desert</option>
+              <option value="Swamp">Swamp</option>
+                <option value="Sunken Boat">Sunken Boat</option>
+                <option value="Underworld">Underworld</option>
+                <option value="Another Planet">Another Planet</option>
+                <option value="Block Of Cheese">Block Of Cheese</option>
+                <option value="Poo-Poo Palace">Poo-Poo Palace</option>
+                </select>
+            </div>
+        </section>
         
 
-<section>
-  <h3>Type In Your Favorite Word</h3>
-  <div class="word" id="form-box">
-   
-
-      <textarea 
-        id="word"
-        name="word"
-        placeholder="Type In Your Favorite Word"
-      ></textarea>
-    </div>
-</section>  
-<section>
-  <div class = "submit-button">
-    <button id="submit" type="button" class="button" value="submit" onclick="storyForm()">Submit</button>
+        <section>
+          <h3>Type In Your Favorite Word</h3>
+          <div class="word" id="form-box">
+              <textarea 
+                id="word"
+                name="word"
+                placeholder="Type In Your Favorite Word"
+              ></textarea>
+            </div>
+        </section> 
+         
+        <section>
+          <div class = "submit-button">
+            <button id="submit" type="button" class="button" value="submit" onclick="storyForm()">Submit</button>
           </div>
-</section>
-  </form>
+        </section>
 
+      </form>
     </main>
-   
   </body>
-
 
   <footer id="Contact">
     <h4>Contact</h4>
-        <a  href="mailto:edgegustavkotze@gmail.com?subject = Feedback or Contact about Form HTML = Message">Email</a>
-        <a  href="https://www.linkedin.com/in/gustav-kotze-433853137/">Linkedin</a>
-        <a  href="https://github.com/Goosmeister">Github</a>
-        <p>Or Visit <a href="https://goosmeister.github.io/">My Portofolio</a></p>
-      </footer>
+      <a  href="mailto:edgegustavkotze@gmail.com?subject = Feedback or Contact about Form HTML = Message">Email</a>
+      <a  href="https://www.linkedin.com/in/gustav-kotze-433853137/">Linkedin</a>
+      <a  href="https://github.com/Goosmeister">Github</a>
+      <b>Or Visit <a href="https://goosmeister.github.io/">My Portofolio</a></b>
+  </footer>
 
 </html>
