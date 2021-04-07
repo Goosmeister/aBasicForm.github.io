@@ -13,6 +13,7 @@ nav{
      box-shadow: none;
      border-bottom: none;
  }
+
  nav a{
      font-size: 5vw;
  }
@@ -20,9 +21,10 @@ nav{
  ul button{
      height: 12vw;
      width: 20vw;
-     border-radius: 25%;
-     border: 
+     border-radius: 10%;
+     border: 2px solid white;
  }
+
  h1{
     margin-top: 15vw;
     font-size: 12vw;
@@ -63,9 +65,26 @@ border-radius: 5px;
       font-size: 10vw;
   }
   p{
-    font-size: 6.5vw;
+    font-size: 5vw;
     padding: 1vw;
     margin: 15vw 2vw;
     line-height: 1.6;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --text-color-normal: #0a244d;
+        --text-color-light: #8cabd9;
+      }
+      
+      html[data-theme='dark'] {
+        --text-color-normal: hsl(210, 10%, 62%);
+        --text-color-light: hsl(210, 15%, 35%);
+        --text-color-richer: hsl(210, 50%, 72%);
+        --text-color-highlight: hsl(25, 70%, 45%);
+      }
+      body[data-theme='dark']{
+        background:#020608 ;
+      }
 }

@@ -26,6 +26,8 @@ body{
 
 }
 
+/*Navigation*/
+
 nav a{
   text-decoration: none !important;
   color:orange;
@@ -67,6 +69,8 @@ nav{
   position: fixed;
   box-shadow: 0 0 0.5vw black;
 }
+
+/*main form section*/
 
 section{
   border-radius: 0.5vw;
@@ -298,8 +302,9 @@ footer p, a{
     bottom: 100vw;
     margin: 10vw;
     padding: 10vw;
-    color: black;
+    color: white;
     font-size: 2vw;
+    border: 2px solid white;
   }
   #Back{
     display: none;
